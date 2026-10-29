@@ -1,72 +1,348 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Parthiban S - Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parthiban S - Portfolio</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #fbfaf7;
+    color: #242721;
+    line-height: 1.55;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 15px 0 20px;
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 38px;
+    margin: 0 0 5px;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 0 0 12px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 7px 0 12px;
+}
+
+section {
+    margin: 22px 0;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 175px;
+    object-fit: cover;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    padding-left: 20px;
+}
+
+#projects, #education, #certificate, #interests {
+    padding-left: 20px;
+}
+
+li {
+    padding: 2px 0;
+}
+
+#projects li, #education li, #certificate li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #344632;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 14px;
+    }
+
+    .hero {
+        gap: 15px;
+    }
+
+    .profile-pic {
+        width: 105px;
+        height: 130px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    section {
+        margin: 18px 0;
+    }
+}
+</style>
 </head>
+
 <body>
+<main>
 
-    <h1>PARTHIBAN S</h1>
-    <p>Ambattur, Chennai | +91 7200409425 | parthibans048@gmail.com | LinkedIn</p>
-    <img src="myphoto.jpg" alt="Profile Photo" class="profile">
+    <div class="hero">
+        <div>
+            <h1 id="name"></h1>
+            <p id="role"></p>
+            <p id="location"></p>
+        </div>
 
-    <h3>ABOUT</h3>
-    <p>Highly motivated and detail-oriented undergraduate student with a solid foundation in B.Tech. IT, eager to translate academic knowledge into practical applications. Enthusiastic about programming, content creation and quick to adapt to new tools and technologies[cite: 1].</p>
+        <img src="image.jpeg" alt="Parthiban S" class="profile-pic">
+    </div>
 
-    <h3>EDUCATION</h3>
-    <p><strong>B.Tech. Information Technology</strong> - S.A Engineering College (7.81 CGPA till 6th sem)[cite: 1]</p>
-    <p><strong>SSLC and HSC</strong> - Ebenezer Jaganath Marcus Mat Hr School (12th - 72.5%)[cite: 1]</p>
+    <section id="about">
+        <h2>About Me</h2>
 
-    <h3>TECHNICAL SKILLS</h3>
-    <p>Python, HTML & CSS, JAVA, UI/UX, C Language[cite: 1]</p>
+        <p>
+            I am Parthiban S, a B.Tech Information Technology student at
+            S.A. Engineering College with an interest in software development,
+            web technologies and UI/UX design. I enjoy learning how applications
+            work and using programming to develop practical solutions.
+        </p>
 
-    <h3>FUNCTIONAL SKILLS</h3>
-    <p>Budget planning, Communication, Problem-solving, Critical thinking[cite: 1]</p>
+        <p>
+            My technical skills include Python, Java, C, HTML, CSS and MongoDB.
+            Through my academic learning and projects, I have explored web
+            application development, user interface design and data management.
+            I am interested in understanding how different technologies work
+            together to create useful applications.
+        </p>
 
-    <h3>CERTIFICATIONS</h3>
-    <p>
-        Programming in Java - NPTEL[cite: 1]<br>
-        UI/UX Design - VEI Technologies[cite: 1]<br>
-        MongoDB - VEI technologies[cite: 1]<br>
-        Full Stack development Client Side - Beeja Academy[cite: 1]
-    </p>
+        <p>
+            My projects include a Job Application Portal and a Gaming Esports
+            Registration Website. These projects have helped me explore website
+            structure, user interaction and application design while improving
+            my understanding of the development process.
+        </p>
 
-    <h3>PROJECTS</h3>
-    <p>
-        Job Application Portal[cite: 1]<br>
-        Gaming Esports registration Web (UI/UX)[cite: 1]
-    </p>
+        <p>
+            Outside programming, I enjoy photography, video editing and Kabaddi.
+            I aim to strengthen my programming fundamentals, improve my
+            problem-solving abilities and continue learning software and
+            full-stack development.
+        </p>
+    </section>
 
-    <h3>INTERESTS</h3>
-    <p>Photography, Video Editing, Kabaddi[cite: 1]</p>
+    <section id="skills-section">
+        <h2>Technical Skills</h2>
+        <ul id="skills"></ul>
+    </section>
 
-    <h3>LANGUAGES KNOWN</h3>
-    <p>English, Tamil, Hindi[cite: 1]</p>
+    <section id="projects-section">
+        <h2>Projects</h2>
+        <ul id="projects"></ul>
+    </section>
 
-    <p><strong>Declaration:</strong> I hereby declare that the information provided above is true and best of my Knowledge and belief[cite: 1].</p>
-    
-    <p>
-        <strong>Place:</strong> Chennai<br>
-        <strong>Date:</strong> _________
-    </p>
+    <section id="education-section">
+        <h2>Education</h2>
+        <ul id="education"></ul>
+    </section>
 
-    <p><strong>PARTHIBAN S</strong>[cite: 1]</p>
+    <section id="certificates-section">
+        <h2>Certificates</h2>
+        <ul id="certificate"></ul>
+    </section>
+
+    <section id="interests-section">
+        <h2>Interests and Languages</h2>
+        <ul id="interests"></ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Details</h2>
+        <p id="email"></p>
+        <p id="phone"></p>
+    </section>
+
+</main>
+
+<script>
+    const userData = {
+      name: "Parthiban S",
+      role: "B.Tech Information Technology | Aspiring Developer",
+      email: "parthibans048@gmail.com",
+      phone: "+91 7200409425",
+      location: "Ambattur, Chennai",
+
+      githubUrl: "",
+      linkedinUrl: "",
+
+      resumeUrl: "Parthiban_Resume.pdf",
+
+      skills: [
+        "Python",
+        "HTML",
+        "CSS",
+        "Java",
+        "C",
+        "UI/UX Design",
+        "MongoDB"
+      ],
+
+      education: [
+        {
+          qualification: "B.Tech Information Technology",
+          institution: "S.A. Engineering College",
+          result: "CGPA: 7.81 up to Semester 6"
+        },
+        {
+          qualification: "Higher Secondary (HSC)",
+          institution: "Ebenezer Jaganath Marcus Matriculation HSS",
+          result: "72.5%"
+        },
+        {
+          qualification: "SSLC",
+          institution: "Ebenezer Jaganath Marcus Matriculation HSS",
+          result: ""
+        }
+      ],
+
+      projects: [
+        {
+          title: "Job Application Portal",
+          description:
+            "A web project focused on organising job application information."
+        },
+        {
+          title: "Gaming Esports Registration Website",
+          description:
+            "A website project focused on registration for esports participants."
+        }
+      ],
+
+      certificates: [
+        {
+          title: "Programming in Java",
+          issuer: "NPTEL"
+        },
+        {
+          title: "UI/UX Design",
+          issuer: "VEI Technologies"
+        },
+        {
+          title: "MongoDB",
+          issuer: "VEI Technologies"
+        },
+        {
+          title: "Full Stack Development - Client Side",
+          issuer: "Beeja Academy"
+        }
+      ],
+
+      interests: [
+        "Photography",
+        "Video Editing",
+        "Kabaddi",
+        "English",
+        "Tamil",
+        "Hindi"
+      ]
+    };
+
+    const nameElem = document.getElementById("name");
+    const roleElem = document.getElementById("role");
+
+    nameElem.innerHTML = userData.name;
+    roleElem.innerHTML = userData.role;
+
+    document.getElementById("skills").innerHTML =
+      userData.skills.map(skill =>
+        `<li id="item">${skill}</li>`
+      ).join("");
+
+    document.getElementById("education").innerHTML =
+      userData.education.map(edu =>
+        `<li id="item">
+          <strong>${edu.qualification}</strong><br>
+          ${edu.institution}<br>
+          ${edu.result}
+        </li>`
+      ).join("");
+
+    document.getElementById("projects").innerHTML =
+      userData.projects.map(project =>
+        `<li id="item">
+          <strong>${project.title}</strong><br>
+          ${project.description}
+        </li>`
+      ).join("");
+
+    document.getElementById("certificate").innerHTML =
+      userData.certificates.map(cert =>
+        `<li id="item">
+          <strong>${cert.title}</strong> - ${cert.issuer}
+        </li>`
+      ).join("");
+
+    document.getElementById("interests").innerHTML =
+      userData.interests.map(item =>
+        `<li id="item">${item}</li>`
+      ).join("");
+
+    document.getElementById("email").innerHTML =
+      `Email: ${userData.email}`;
+
+    document.getElementById("phone").innerHTML =
+      `Phone: ${userData.phone}`;
+
+    document.getElementById("location").innerHTML =
+      `Location: ${userData.location}`;
+
+    if (userData.githubUrl) {
+      document.getElementById("github").innerHTML =
+        `GitHub: <a href="${userData.githubUrl}" target="_blank" rel="noopener noreferrer">Visit GitHub</a>`;
+    } else {
+      document.getElementById("github")?.remove();
+    }
+
+    if (userData.linkedinUrl) {
+      document.getElementById("linkedin").innerHTML =
+        `LinkedIn: <a href="${userData.linkedinUrl}" target="_blank" rel="noopener noreferrer">Visit LinkedIn</a>`;
+    } else {
+      document.getElementById("linkedin")?.remove();
+    }
+
+    document.getElementById("resume")?.remove();
+</script>
 
 </body>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        marigin : 20px;
-        border: 1px solid rgb(14, 15, 15);
-        padding: 20px;
-        h1{
-            color: rgb(14, 15, 15);
-        }
-        p {
-            color:rgb(230, 149, 28)
-        }   
-
-    }
-</style>
-
 </html>
